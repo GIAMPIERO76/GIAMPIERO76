@@ -65,7 +65,7 @@ body {
 .slide-number {
   color: #000;
   text-align: center;
-  font-size: 100px;
+  font-size: 90px;
 }
 @-webkit-keyframes slide {
   20% {margin-left: 0px;}
