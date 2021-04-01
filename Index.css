@@ -1,0 +1,40 @@
+body {
+  font-family: Helvetica, sans-serif;
+  padding: 1px;
+  text-align: center;
+  
+}
+
+#slideshow {
+  overflow: hidden;
+  height: 310px;
+  width: 728px;
+  margin: 0 auto;
+}
+
+.slide-wrapper {
+  width: 2912px;
+  -webkit-animation: slide 20s ease infinite;
+}
+
+.slide {
+  float: left;
+  height: 510px;
+  width: 728px;
+}
+
+.slide:nth-child(1) {
+  background: #D93B65;
+}
+
+.slide:nth-child(2) {
+  background: #037E8C;
+}
+
+.slide:nth-child(3) {
+  background: #36BF66;
+}
+
+.slide:nth-child(4) {
+  background: #D9D055;
+}
