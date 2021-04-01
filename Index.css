@@ -47,7 +47,7 @@ body {
 }
 .slide {
   float: left;
-  height: 510px;
+  height: 610px;
   width: 728px;
 }
 .slide:nth-child(1) {
