@@ -44,14 +44,14 @@ body {
   overflow: hidden;
   height: 310px;
   width: 728px;
-  align:center;
+  margin: 0 auto;
   
 
 }
 .slide-wrapper {
   width: 2912px;
   -webkit-animation: slide 20s ease infinite;
-  align:center;
+  
 }
 .slide {
   float: left;
