@@ -37,7 +37,7 @@ body {
 }
 #slideshow {
   overflow: hidden;
-  height: 310px;
+  height: 410px;
   width: 728px;
   margin: 0 auto;
 }
@@ -47,7 +47,7 @@ body {
 }
 .slide {
   float: left;
-  height: 610px;
+  height: 510px;
   width: 728px;
 }
 .slide:nth-child(1) {
