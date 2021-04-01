@@ -45,7 +45,8 @@ body {
   overflow: hidden;
   height: 410px;
   width: 728px;
-  margin: 10;
+  margin: 10px;
+  padding:0;
 }
 .slide-wrapper {
   width: 2912px;
