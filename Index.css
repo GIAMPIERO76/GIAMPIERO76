@@ -40,9 +40,7 @@ body {
   padding 1px;
   text-align: center;
 }
-  div{
-    align:center;
-}
+ 
 #slideshow {
   overflow: hidden;
   height: 310px;
