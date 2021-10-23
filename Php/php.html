@@ -7,8 +7,27 @@
     <title>Document</title>
 </head>
 <body>
-    <?php 
-    include 'Login.php';
-?>
+    <button type="button" onclick="CallPHP_with_TexT_Result()">EseguiScriptPHP</button>
+    <script>
+    function CallPHP_with_TexT_Result() {
+        wname = document.getElementById('name').value;
+        $.ajax({
+            url: '.php',
+            type: 'GET',
+            data: { n:wname },
+            dataType: "text",
+            success: function(result){
+                var msg="";
+                if (result=="a") {
+                    msg="messaggio 1";
+                }
+                else {
+                    msg="messaggio 2";
+                }
+                $(#esito).html(msg);
+            }
+        });
+    }
+</script>
 </body>
 </html>
