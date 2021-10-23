@@ -12,7 +12,7 @@
     function CallPHP_with_TexT_Result() {
         wname = document.getElementById('name').value;
         $.ajax({
-            url: '.php',
+            url: 'complete.php',
             type: 'GET',
             data: { n:wname },
             dataType: "text",
