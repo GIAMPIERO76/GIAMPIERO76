@@ -1,0 +1,62 @@
+# gitlab-ci.yml
+
+# Seleziona cosa dovremmo memorizzare nella cache
+ 
+cache :
+   key : ${CI_COMMIT_REF_SLUG}
+   percorsi :
+  $ { CI_COMMIT_REF_SLUG }
+  
+    - venditore/- venditore /
+
+# Abbiamo bisogno di MySQL come database per testare qualcosa relativo al funzionamento del DB.# Abbiamo bisogno di MySQL come database per testare qualcosa relativo al funzionamento del DB.
+# tirerà l'immagine docker taggata con mysql:5.7 e avvierà il servizio ad ogni esecuzione# tirerà l'immagine docker taggata con mysql:5.7 e avvierà il servizio ad ogni esecuzione
+servizi :
+  - mysql:5.7- mysql : 5.7
+
+# Configurazione di alcune variabili di ambiente che verranno utilizzate in ogni processo di pipeline CI# Configurazione di alcune variabili di ambiente che verranno utilizzate in ogni processo di pipeline CI
+variabili :
+   # Configura il servizio mysql (https://hub.docker.com/_/mysql/)
+   MYSQL_ROOT_PASSWORD : root
+  https :// hub . portuale . com /_/ mysql / )
+   radice
+
+# Questo è il nostro compito originale che verrà eseguito# Questo è il nostro compito originale che verrà eseguito
+prova :
+# Stiamo usando l'immagine docker php:7.4 qui# Stiamo usando l'immagine docker php:7.4 qui
+  immagine : php:7.4
+   fase : testphp : 7.4 test
+  
+  # Variabili globali per la tua app PHP# Variabili globali per la tua app PHP
+  variabili :
+     APP_NAME : "Hello World" 
+    # root è la password del DB che hai impostato sopra. @mysql è l'indirizzo del servizio MySQL che hai aggiunto sopra 
+    DATABASE_URL : "mysql://root:root@mysql:3306/symfony"
+     # root è la password del DB che hai impostato sopra. @mysql è l'indirizzo del servizio MySQL che hai aggiunto sopra 
+  script :
+     # Installa git, l'immagine php non è installata
+     - apt-get update -yqq
+    
+    apt - ottieni aggiornamento - yqq
+    - apt-get install git libzip-dev zip -yqq- apt - get installare git libzip - dev zip - YQQ
+    # Installa xdebug appositamente per i rapporti sulla copertura del codice# Installa xdebug appositamente per i rapporti sulla copertura del codice
+    - pecl install xdebug- pecl install xdebug
+    - docker-php-ext-enable xdebug- docker - php - ext - abilita xdebug
+
+    # Installa il driver mysql
+    
+     - docker-php-ext-install pdo_mysql zipdocker - php - ext - installa pdo_mysql zip
+
+    # Installa il compositore
+    
+     - curl --show-error --silent https://getcomposer.org/installer | phpcurl - show - error - silent https : // getcomposer . org / installatore | php
+
+    # Installa tutte le dipendenze del progetto
+    
+     - php composer.phar installcompositore php . installazione far
+
+    # Esegui PHPUnit con il report di copertura del codice
+    
+     - ./bin/phpunit --configuration phpunit.xml.dist --coverage-text --colors=never ./ bin / phpunit - configurazione di PHPUnit . xml . dist -- copertura - testo -- colori = mai
+# Per consentire a GitLab di comprendere la valutazione della copertura del codice, è necessario scrivere la regex seguente# Per consentire a GitLab di comprendere la valutazione della copertura del codice, è necessario scrivere la regex seguente
+  copertura : '/^\s*Righe:\s*\d+.\d+\%/' 
