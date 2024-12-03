@@ -1,0 +1,65 @@
+nav{
+margin:0;
+padding:0;
+background-color:black;
+height: 50px;
+}
+nav ul{
+margin:0;
+padding:0;
+}
+nav ul li{
+margin:0;
+padding:0;
+list-style-type: none;
+width: 150px;
+float: left;
+}
+li a{
+text-decoration:none;
+color:white;
+line-height:50px;
+display:block;
+}
+*{
+	padding:0;
+	margin:0;
+	box-sizing-border-box;
+}
+body{
+	font-family:'verdana', sans-serif;
+}
+h1,h2,h3,h4,p{
+	margin-bottom:10px;
+}
+section{
+	padding:20px;
+	display:flex;
+	flex-direction:column;
+	text-align:justify;
+	height:100vh;
+	justify-content:center;
+	align-items:center;
+	color:white;
+	position:relative;
+}
+section > *{
+	position:relative;
+	z-index:2;
+}
+section{
+	background-image:url('C:/Users/Utente/Desktop/Sito Daniela/sito costruito/17635100_1298487963567353_508184302671053339_o.jpg');
+	background-position:center;
+	background-repeat:no-repeat;
+	background-size:cover;
+}
+section:after{
+	content:'';
+	position:absolute;
+	left:0;
+	top:0;
+	width:100%; 
+	height:100%;
+	background:rgba(0,0,0,.6);
+	z-index:1;
+}

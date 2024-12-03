@@ -1,0 +1,43 @@
+nav{
+margin:0;
+padding:0;
+background-color:black;
+height: 50px;
+}
+nav ul{
+margin:0;
+padding:0;
+}
+nav ul li{
+margin:0;
+padding:0;
+list-style-type: none;
+width: 150px;
+float: left;
+}
+li a{
+text-decoration:none;
+color:white;
+line-height:50px;
+display:block;
+}
+body{
+	margin:0;
+	padding:0;
+	background-image:url('C:/Users/Utente/Desktop/Sito Daniela/sito costruito/17635100_1298487963567353_508184302671053339_o.jpg');
+background-position:center;
+background-repeat:no-repeat;
+background-size:cover;
+}
+.text{
+	margin:90px;
+	padding:0;
+	 width:auto;
+  background-position: center;
+  background-size:cover;
+  background-repeat:no-repeat;
+background:transparent;
+background:rgba(0,0,0,.4);
+color:white;
+}
+

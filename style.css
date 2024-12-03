@@ -1,0 +1,42 @@
+nav{
+margin:0;
+padding:0;
+background-color:black;
+height: 50px;
+}
+nav ul{
+margin:0;
+padding:0;
+}
+nav ul li{
+margin:0;
+padding:0;
+list-style-type: none;
+width: 150px;
+float: left;
+}
+li a{
+text-decoration:none;
+color:white;
+line-height:50px;
+display:block;
+}
+body{
+	margin:0px;
+	padding:0px;
+	height:90%;
+	background-image:url('C:/Users/Utente/Desktop/Sito Daniela/sito costruito/10-Campo-Med-in-Acqua.jpg');
+background-position:center;
+background-repeat:no-repeat;
+background-size:cover;
+}
+img{
+	margin:0px;
+	padding:0px;
+	height:100%;
+	background-image:url('C:/Users/Utente/Desktop/Sito Daniela/sito costruito/IDEOGRAMMA-REIKI.jpg');
+background-position:left;
+background-repeat:no-repeat;
+background-size:cover;
+opacity:0.4;
+}
