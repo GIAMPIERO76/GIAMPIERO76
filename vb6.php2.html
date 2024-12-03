@@ -1,0 +1,34 @@
+<html>
+<head>
+<title>ECR-Monitor-Downloading</title>
+<link rel="stylesheet" href="vb6.css">
+</head>
+<body>
+<table>
+<tr>
+<td>File</td><td>Setting</td><td>Help</td>
+</tr>
+</table>
+<form action="script_shell.php" method="POST" class="form-disable">
+<fieldset>
+<legend>Commands</legend>
+<div class="titolo">
+<h1>System Connection S.r.l.</h1>
+</div>
+<table>
+<tr>
+<td><textarea><?php echo ($reult1); ?></textarea></td>
+<td>
+<p><button type="submit" value="send">Blanck Check</button></p>
+<p><button type="submit" value="send">Erase</button></p>
+<p><button type="submit" value="send">Program</button></p>
+<p><button type="submit" value="send" onclick="script_shell.php">Verify</button></p>
+<p><button type="submit" value="send">Self Program</button></p>
+<p><button type="submit" value="send">Reset</button></p>
+</td>
+</tr>
+</table>
+</fieldset>
+</form>
+</body>
+</html>

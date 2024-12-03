@@ -1,0 +1,352 @@
+<html>
+<head>
+  <title>How to use ActiveXperts Serial Port Component</title>
+ 
+<style type="text/css">
+<!--
+html {
+  overflow:-moz-scrollbars-vertical; /* overflow: scroll */
+  overflow-y:scroll;
+}
+
+body {
+  padding:2em 0; margin:0;
+
+  text-align:center; /* center IE5.5 > */
+  font-family:Arial, Verdana, Helvetica, sans-serif;
+  font-size:83%; /* This means 83% of the default browser font. All the other font values will be based on this one */
+  background:url("body_bg.png") 0 -1em repeat-x #ddd;
+}
+
+
+/* -------------------- resets -------------------- */ 
+
+.nocss { display:none; }
+
+a img { color:#000;border:0; } /* set image border to zero */
+
+a:active,
+a:focus { outline:0; } /* remove firefox link border */
+
+textarea { overflow:auto; } /* remove textarea scrollbar in ie */
+
+* html table { font-size: 100%; } /* for IE 5.5 */
+
+#page a[name] { padding:0; } /* firefox 3 / safari 3 */
+
+#printbranding { display:none; }
+
+
+/* -------------------- clearfix -------------------- */ 
+
+.clear { min-height:0; }
+
+.clear:after {
+  content:".";
+  display:block;
+  clear:both;
+  visibility:hidden;
+  height:0;
+  line-height:0%;
+}
+
+* html .clear { height:1%; }
+
+/* -------------------- page -------------------- */ 
+
+#page {
+  overflow:auto;
+  float:center; display:block;
+  padding:.5em 1em 2em 1em; 
+  margin:0;
+  width:70em;
+  margin:auto;
+  
+  font-size:.85em;
+  border:1px solid #000;
+  background:#fff;
+}
+
+#page hr {
+  border:0 none;
+  border-top:1px solid #bbb;/*the border*/
+  height:1px;/*whatever the total width of the border-top and border-bottom equal*/
+}
+
+#page a {
+  text-decoration:none;
+  /*font-weight:bold;*/
+  color:#a00; /*#015381*/
+}
+
+#page a:hover {
+  text-decoration:underline;
+  color:#a00;
+}
+
+#page p {
+  margin:1.5em 0 1em 0;
+  color:#202020; 
+  text-align:left;
+}
+
+/* -------------------- table -------------------- */
+
+#page table {
+  margin:.15em 0 1em 0;
+  width:100%;
+  font-size:1em;
+  border:1px solid #999;
+}
+
+#page table thead th {
+  padding:.15em 0 0 .5em;
+
+  border:1px solid #ccc;
+  color:#333;
+  background:#ddd;
+}
+
+#page table tbody th {
+  padding:.25em;
+
+  text-align:left;
+  border:1px solid #ccc;
+  color:#333;
+  background:#fff;
+}
+
+#page table tbody td {
+  padding:.25em;
+
+  text-align:left;
+  border:1px solid #ccc;
+  background:#fff;
+  width:33%;
+}
+
+#page .left {
+  float:left;
+  display:inline;
+  padding:.25em;
+
+  text-align:left;
+  background:#fff;
+}
+#page .right {
+  float:right;
+  display:inline;
+  padding:.25em;
+
+  text-align:left;
+  background:#fff;
+}
+
+
+#page table tfoot { background:#eee; }
+-->
+</style>
+</head>
+
+<body>
+	<div id="page">
+	
+			<hr />
+			<img src="Title.jpg" alt="ActiveXperts Serial Port Component sample Applications - Index" />
+		
+			<hr />
+			<br />
+			<p>
+			ActiveXperts Serial Port Component is an ActiveX/COM component that can be integrated in virtually any Windows development environment.
+			The 32 bit component is a single DLL file and is installed here:
+			The 32 bit component is a single DLL file and is installed here:<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="file://C:\Program Files\ActiveXperts\Serial Port Component\Program\">C:\Program Files\ActiveXperts\Serial Port Component\Program\AxSerial32.dll</a><br>
+			The 64 bit component is a single DLL file and is installed here:<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="file://C:\Program Files\ActiveXperts\Serial Port Component\Program\">C:\Program Files\ActiveXperts\Serial Port Component\Program\AxSerial64.dll</a><br>
+			Click on the green icon to run a pre-compiled application; click on the yellow icon to explore the project.
+			</p>
+			<br />
+			
+			<table>
+				<thead><tr><th colspan="3">.NET applications</th></tr></thead>
+				<tbody>
+					<tr>
+						<td><span class="left"><a target="_blank" href="file://C:\Program Files\ActiveXperts\Serial Port Component\Samples\Visual Basic.NET\Console Applications">Visual Basic .NET (Console)</a></span>
+							<span class="right">
+							<a target="_blank" href="file://C:\Program Files\ActiveXperts\Serial Port Component\Samples\Visual Basic.NET\Console Applications"><img src="folder.bmp" /></a>
+							<a target="_blank" href="file://C:\Program Files\ActiveXperts\Serial Port Component\Samples\Visual Basic.NET\Console Applications\QueryDevice\bin\Release\Any CPU\QueryDevice.exe"><img src="arrow.bmp" /></a>
+							</span>
+						</td>	
+						<td><span class="left"><a target="_blank" href="file://C:\Program Files\ActiveXperts\Serial Port Component\Samples\Visual CSharp.NET\Console Applications">C# .NET (Console)</a></span>
+							<span class="right">
+						    <a target="_blank" href="file://C:\Program Files\ActiveXperts\Serial Port Component\Samples\Visual CSharp.NET\Console Applications"><img src="folder.bmp" /></a>
+							<a target="_blank" href="file://C:\Program Files\ActiveXperts\Serial Port Component\Samples\Visual CSharp.NET\Console Applications\QueryDevice\bin\Release\Any CPU\QueryDevice.exe"><img src="arrow.bmp" /></a>
+							</span>
+						</td>
+						<td><span class="left">&nbsp;</span>
+							<span class="right">
+							&nbsp;
+							</span>
+						</td>
+					</tr>
+					<tr>
+						<td><span class="left"><a target="_blank" href="file://C:\Program Files\ActiveXperts\Serial Port Component\Samples\Visual Basic.NET\Forms Applications\">Visual Basic .NET (Forms)</a></span>
+							<span class="right">
+							<a target="_blank" href="file://C:\Program Files\ActiveXperts\Serial Port Component\Samples\Visual Basic.NET\Forms Applications\"><img src="folder.bmp" /></a>
+							<a href="file://C:\Program Files\ActiveXperts\Serial Port Component\Samples\Visual Basic.NET\Forms Applications\QueryDevice\bin\Release\Any CPU\QueryDevice.exe"><img src="arrow.bmp" /></a>
+							</span>
+						</td>
+						<td><span class="left"><a target="_blank" href="file://C:\Program Files\ActiveXperts\Serial Port Component\Samples\Visual CSharp.NET\Forms Applications">C# .NET (Forms)</a></span>
+						    <span class="right">
+							<a target="_blank" href="file://C:\Program Files\ActiveXperts\Serial Port Component\Samples\Visual CSharp.NET\Forms Applications"><img src="folder.bmp" /></a>
+							<a target="_blank" href="file://C:\Program Files\ActiveXperts\Serial Port Component\Samples\Visual CSharp.NET\Forms Applications\QueryDevice\bin\Release\Any CPU\QueryDevice.exe"><img src="arrow.bmp" /></a>
+							</span>
+						</td>
+						<td><span class="left">&nbsp;</span>
+							<span class="right">
+							&nbsp;
+							</span>
+						</td>
+					</tr>
+				</tbody>	
+			</table>
+      
+			<table>
+				<thead><tr><th colspan="6">Web applications</th></tr></thead>
+				<tbody>
+					<tr>
+						<td><span class="left"><a target="_blank" href="file://C:\Program Files\ActiveXperts\Serial Port Component\Samples\Asp.Net\Vb-ServerSide">ASP VB .NET (server side)</a></span>
+							<span class="right">
+							<a target="_blank" href="file://C:\Program Files\ActiveXperts\Serial Port Component\Samples\Asp.Net\Vb-ServerSide"><img src="folder.bmp" /></a>
+							<a target="_blank" href="C:\Program Files\ActiveXperts\Serial Port Component\Utilities\ConfigureIIS.exe"><img src="arrow.bmp" /></a>  <!-- serialport-vb-serverside -->
+							</span>
+						</td>
+						<td><span class="left"><a target="_blank" href="file://C:\Program Files\ActiveXperts\Serial Port Component\Samples\Asp.Net\Vb-ClientSide">ASP VB .NET (client side)</a></span>
+							<span class="right">
+							<a target="_blank" href="file://C:\Program Files\ActiveXperts\Serial Port Component\Samples\Asp.Net\Vb-ClientSide"><img src="folder.bmp" /></a>
+							<a target="_blank" href="C:\Program Files\ActiveXperts\Serial Port Component\Utilities\ConfigureIIS.exe"><img src="arrow.bmp" /></a>  <!-- serialport-vb-clientside -->
+							</span>
+						</td> 
+						<td><span class="left"><a target="_blank" href="file://C:\Program Files\ActiveXperts\Serial Port Component\Samples\PHP">PHP</a></span>
+							<span class="right">
+							<a target="_blank" href="file://C:\Program Files\ActiveXperts\Serial Port Component\Samples\PHP"><img src="folder.bmp" /></a>
+							<img src="empty.bmp" />
+							</span>
+						</td>
+          </tr>
+
+					<tr>
+						<td><span class="left"><a target="_blank" href="file://C:\Program Files\ActiveXperts\Serial Port Component\Samples\Asp.Net\Csharp-ServerSide">ASP C# .NET (server side)</a></span>
+							<span class="right">
+							<a target="_blank" href="file://C:\Program Files\ActiveXperts\Serial Port Component\Samples\Asp.Net\Csharp-ServerSide"><img src="folder.bmp" /></a>
+							<a target="_blank" href="C:\Program Files\ActiveXperts\Serial Port Component\Utilities\ConfigureIIS.exe"><img src="arrow.bmp" /></a>  <!-- serialport-csharp-serverside -->
+							</span>
+						</td>
+						<td><span class="left"><a target="_blank" href="file://C:\Program Files\ActiveXperts\Serial Port Component\Samples\Asp.Net\Csharp-ClientSide">ASP C# .NET (client side)</a></span>
+							<span class="right">
+							<a target="_blank" href="file://C:\Program Files\ActiveXperts\Serial Port Component\Samples\Asp.Net\Csharp-ClientSide"><img src="folder.bmp" /></a>
+							<a target="_blank" href="C:\Program Files\ActiveXperts\Serial Port Component\Utilities\ConfigureIIS.exe"><img src="arrow.bmp" /></a>  <!-- serialport-csharp-clientside -->
+							</span>
+						</td>
+						<td><span class="left"><a target="_blank" href="file://C:\Program Files\ActiveXperts\Serial Port Component\Samples\ColdFusion">Adobe ColdFusion</a></span>
+						    <span class="right">
+							<a target="_blank" href="file://C:\Program Files\ActiveXperts\Serial Port Component\Samples\ColdFusion"><img src="folder.bmp" /></a>
+							<img src="empty.bmp" />
+							</span>
+						</td>	
+          </tr>
+
+          <tr>          
+						<td><span class="left"><a target="_blank" href="file://C:\Program Files\ActiveXperts\Serial Port Component\Samples\Asp\ServerSide">ASP (server side)</a></span>
+						    <span class="right">
+							<a target="_blank" href="file://C:\Program Files\ActiveXperts\Serial Port Component\Samples\Asp\ServerSide"><img src="folder.bmp" /></a>
+							<a target="_blank" href="C:\Program Files\ActiveXperts\Serial Port Component\Utilities\ConfigureIIS.exe"><img src="arrow.bmp" /></a>  <!-- serialport-asp-serverside -->
+							</span>
+						</td>
+            
+            <td>
+              &nbsp;
+            </td> 
+
+            <td>
+              &nbsp;
+            </td>
+          </tr>            
+				</tbody>	
+			</table>
+			
+			<table>
+				<thead><tr><th colspan="3">VB and VC++ Applications</th></tr></thead>
+				<tbody>
+					<tr>
+						<td><span class="left"><a target="_blank" href="file://C:\Program Files\ActiveXperts\Serial Port Component\Samples\Visual C++\Forms Applications\">Visual C++ (Forms)</a></span>
+						    <span class="right">
+							<a target="_blank" href="file://C:\Program Files\ActiveXperts\Serial Port Component\Samples\Visual C++\Forms Applications\"><img src="folder.bmp" /></a>
+							<a target="_blank" href="file://C:\Program Files\ActiveXperts\Serial Port Component\Samples\Visual C++\Forms Applications\Query Device\Release64\Query Device.exe"><img src="arrow.bmp" /></a>
+							</span>
+						</td>
+						<td><span class="left"><a target="_blank" href="file://C:\Program Files\ActiveXperts\Serial Port Component\Samples\Visual Basic 6\Forms Applications">Visual Basic 6</a></span>
+						    <span class="right">
+							<a target="_blank" href="file://C:\Program Files\ActiveXperts\Serial Port Component\Samples\Visual Basic 6\Forms Applications"><img src="folder.bmp" /></a>
+							<a target="_blank" href="file://C:\Program Files\ActiveXperts\Serial Port Component\Samples\Visual Basic 6\Forms Applications\Query Device\Demo.exe"><img src="arrow.bmp" /></a>
+							</span>
+						</td>
+						<td><span class="left"><a target="_blank" href="file://C:\Program Files\ActiveXperts\Serial Port Component\Samples\VBA">VBA</a></span>
+						    <span class="right">
+							<a target="_blank" href="file://C:\Program Files\ActiveXperts\Serial Port Component\Samples\VBA"><img src="folder.bmp" /></a>
+							<a target="_blank" href="file://C:\Program Files\ActiveXperts\Serial Port Component\Samples\VBA\Query Device\QueryDevice.xls"><img src="arrow.bmp" /></a>
+							</span>
+						</td>
+					</tr>
+					<tr>
+						<td><span class="left"><a target="_blank" href="file://C:\Program Files\ActiveXperts\Serial Port Component\Samples\Visual C++\Console Applications">Visual C++ (Console)</a></span>
+						    <span class="right">
+							<a target="_blank" href="file://C:\Program Files\ActiveXperts\Serial Port Component\Samples\Visual C++\Console Applications"><img src="folder.bmp" /></a>
+							<a target="_blank" href="file://C:\Program Files\ActiveXperts\Serial Port Component\Samples\Visual C++\Console Applications\Query Device\Release64\Query Device.exe"><img src="arrow.bmp" /></a>
+							</span>
+						</td>
+						<td><span class="left"><a target="_blank" href="file://C:\Program Files\ActiveXperts\Serial Port Component\Samples\VBScript">VBScript</a></span>
+						    <span class="right">
+							<a target="_blank" href="file://C:\Program Files\ActiveXperts\Serial Port Component\Samples\VBScript"><img src="folder.bmp" /></a>
+							<a target="_blank" href="file://C:\Program Files\ActiveXperts\Serial Port Component\Samples\VBScript\QueryDevice\QueryDevice.vbs"><img src="arrow.bmp" /></a>
+							</span>
+						</td>
+						<td><span class="left">&nbsp;</span>
+							<span class="right">
+							&nbsp;
+							</span>
+						</td>
+					</tr>
+				</tbody>	
+			</table>
+
+			<table>
+				<thead><tr><th colspan="3">Misc</th></tr></thead>
+				<tbody>
+					<tr>
+						<td><span class="left"><a target="_blank" href="file://C:\Program Files\ActiveXperts\Serial Port Component\Samples\HTML\Query Device">HTML / Javascript</a></span>
+						    <span class="right">
+							<a target="_blank" href="file://C:\Program Files\ActiveXperts\Serial Port Component\Samples\HTML\Query Device"><img src="folder.bmp" /></a>
+							<a target="_blank" href="file://C:\Program Files\ActiveXperts\Serial Port Component\Samples\HTML\Query Device\index.htm"><img src="arrow.bmp" /></a>
+						</td>
+						<td><span class="left"><a target="_blank" href="file://C:\Program Files\ActiveXperts\Serial Port Component\Samples\Delphi">Delphi</a></span>
+						    <span class="right">
+							<a target="_blank" href="file://C:\Program Files\ActiveXperts\Serial Port Component\Samples\Delphi"><img src="folder.bmp" /></a>
+							<a target="_blank" href="file://C:\Program Files\ActiveXperts\Serial Port Component\Samples\Delphi\Console Application\Query Device\Delphi_Console_Query_Device.exe"><img src="arrow.bmp" /></a>
+							</span>
+						</td>
+						<td><span class="left"><a target="_blank" href="file://C:\Program Files\ActiveXperts\Serial Port Component\Samples\Powershell10\">Powershell 1.0</a></span>
+						    <span class="right">
+							<a target="_blank" href="file://C:\Program Files\ActiveXperts\Serial Port Component\Samples\Powershell10"><img src="folder.bmp" /></a>
+							<img src="empty.bmp" />
+							</span>
+						</td>
+					</tr>
+
+				</tbody>	
+			</table>
+
+		<img src="FootNote.jpg" alt="ActiveXperts" />
+	</div>
+</body>
+</html>

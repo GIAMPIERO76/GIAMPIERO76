@@ -1,0 +1,14 @@
+#!/bin/sh
+# Parallel port CGI script
+#
+# Send HTTP headers
+echo Content-type: text/html;charset=ISO-8859
+echo
+# Do the controlling
+/usr/sbin/lptout 0xff
+# Output web page data
+echo "<html><head></head><body>"
+echo "Parallel port controlled<br>"
+echo "<a href=\"/lpt/index.html\">Go back to controlling page</a>"
+echo "</body></html>"
+#

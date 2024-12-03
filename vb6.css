@@ -1,0 +1,15 @@
+button{
+	height:50px;
+	width:70px;
+}
+textarea{
+	height:380px;
+	width:200px;
+	resize:none;
+}
+.titolo{
+	padding:0px;
+	margin:10px;
+	text-align:center;
+	
+}
